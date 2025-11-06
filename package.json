@@ -21,6 +21,7 @@
     "@mastra/evals": "0.0.0-main-test-05-11-2025-2-20251106053353",
     "@mastra/libsql": "0.0.0-main-test-05-11-2025-2-20251106053353",
     "@mastra/loggers": "0.0.0-main-test-05-11-2025-2-20251106053353",
+    "@mastra/mcp": "0.0.0-main-test-05-11-2025-2-20251106053353",
     "@mastra/memory": "0.0.0-main-test-05-11-2025-2-20251106053353",
     "@mastra/observability": "0.0.0-main-test-05-11-2025-2-20251106053353",
     "zod": "^4.1.12"

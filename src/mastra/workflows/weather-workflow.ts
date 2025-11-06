@@ -169,6 +169,7 @@ const planActivities = createStep({
 
 const weatherWorkflow = createWorkflow({
   id: 'weather-workflow',
+  description: 'Weather workflow',
   inputSchema: z.object({
     city: z.string().describe('The city to get the weather for'),
   }),

@@ -6,6 +6,7 @@ import { Observability } from '@mastra/observability';
 import { weatherWorkflow } from './workflows/weather-workflow';
 import { weatherAgent } from './agents/weather-agent';
 import { toolCallAppropriatenessScorer, completenessScorer, translationScorer } from './scorers/weather-scorer';
+import { mcpServer } from './mcp-server';
 
 export const mastra = new Mastra({
   workflows: { weatherWorkflow },
@@ -20,8 +21,11 @@ export const mastra = new Mastra({
     name: 'Mastra',
     level: 'info',
   }),
+  mcpServers: {
+    mcpServer,
+  },
   observability: new Observability({
     // Enables DefaultExporter and CloudExporter for tracing
     default: { enabled: true },
-    }),
+  }),
 });
