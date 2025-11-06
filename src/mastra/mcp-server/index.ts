@@ -1,6 +1,6 @@
 import { MCPServer } from '@mastra/mcp';
 import { weatherTool } from '../tools/weather-tool';
-import { weatherAgent } from '../agents/weather-agent';
+import { weatherCoordinatorAgent } from '../agents/weather-coordinator-agent';
 import { weatherWorkflow } from '../workflows/weather-workflow';
 
 export const mcpServer = new MCPServer({
@@ -12,7 +12,7 @@ export const mcpServer = new MCPServer({
         weatherTool,
     },
     agents: {
-        weatherAgent,
+        weatherCoordinatorAgent,
     },
     workflows: {
         weatherWorkflow,
